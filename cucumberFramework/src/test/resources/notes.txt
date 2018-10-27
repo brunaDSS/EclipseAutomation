@@ -1,0 +1,28 @@
+
+-->maven-compiler-plugin :
+its necessary to compile source of the project 
+-->running parallel tests from pom.xml
+we need one runner class per feature for parallel testing with the surefire-plugin
+
+under the maven-surefire-plugnin :
+
+<configuration>
+<parallel>classes</parallel>
+  			 <forkMode>perthread</forkMode>
+              <threadCount>5</threadCount>
+              
+With the method above , one jvm will be created and seperate threads to run the tests . 
+
+<forkcount>5</forkcount>
+<reuseFork>true</reusefork>
+with the method above , for each thread we will have a different jvm
+              
+--> cross browser testing
+
+there is two ways of doing this : 
+1- through the testNG.xml file and testNG paramenters , 
+in the same file we will add the same test as many times as we have browsers 
+and change the parameter we are passing for each test
+
+2-through pom.xml file , by setting up a seperate testng.xml for each browser 
+and p
