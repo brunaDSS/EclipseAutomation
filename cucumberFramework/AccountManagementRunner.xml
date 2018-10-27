@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AccountManagement">
+ <!-- <listeners>
+	<listener class-name="helpers.ListenerClass"></listener>
+</listeners>  -->
+  <test  name="AccountManagement - ">
+    <classes>
+      <class name="step_definitions.AccountManagementRunner"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->

@@ -1,0 +1,30 @@
+26/10/2018 17:34:08 devpinoyLogger ************************Hooks @Before Test Scenarios started********************
+26/10/2018 17:34:08 devpinoyLogger Hooks @Before( Cucumber annotation , run before the scenario) Opening Chrome Browser------------------------------
+26/10/2018 17:34:35 devpinoyLogger Hooks: @After ( cucumber annotation)  test actions- run after each scenario
+26/10/2018 17:34:35 devpinoyLogger Hooks: @ After -Test Scenarios Failed
+26/10/2018 17:34:41 devpinoyLogger **********Hooks :@After  Test Scenarios END********************
+26/10/2018 17:34:42 devpinoyLogger ************************Hooks @Before Test Scenarios started********************
+26/10/2018 17:34:42 devpinoyLogger Hooks @Before( Cucumber annotation , run before the scenario) Opening Chrome Browser------------------------------
+26/10/2018 17:34:52 devpinoyLogger Hooks: @After ( cucumber annotation)  test actions- run after each scenario
+26/10/2018 17:34:52 devpinoyLogger Hooks: @ After -Test Scenarios Failed
+26/10/2018 17:34:58 devpinoyLogger **********Hooks :@After  Test Scenarios END********************
+26/10/2018 17:34:58 devpinoyLogger ************************Hooks @Before Test Scenarios started********************
+26/10/2018 17:34:58 devpinoyLogger Hooks @Before( Cucumber annotation , run before the scenario) Opening Chrome Browser------------------------------
+26/10/2018 17:35:10 devpinoyLogger clicked on sign in
+26/10/2018 17:35:10 devpinoyLogger entered email
+26/10/2018 17:35:10 devpinoyLogger clicked initial submit
+26/10/2018 17:35:20 devpinoyLogger Hooks: @After ( cucumber annotation)  test actions- run after each scenario
+26/10/2018 17:35:20 devpinoyLogger Hooks: @ After -Test Scenarios Failed
+26/10/2018 17:35:20 devpinoyLogger Current Page URL is http://automationpractice.com/index.php?controller=authentication&back=my-account
+26/10/2018 17:35:21 devpinoyLogger path C:\Users\bruna\Desktop\projects\New folder\cucumberFramework\ExecutionReports\FailedScreenshots\Screenshot_1540571721572.png
+26/10/2018 17:35:21 devpinoyLogger **********Hooks :@After  Test Scenarios END********************
+26/10/2018 17:35:22 devpinoyLogger ************************Hooks @Before Test Scenarios started********************
+26/10/2018 17:35:22 devpinoyLogger Hooks @Before( Cucumber annotation , run before the scenario) Opening Chrome Browser------------------------------
+26/10/2018 17:36:00 devpinoyLogger clicked on sign in
+26/10/2018 17:36:00 devpinoyLogger entered email
+26/10/2018 17:36:05 devpinoyLogger clicked initial submit
+26/10/2018 17:36:15 devpinoyLogger Hooks: @After ( cucumber annotation)  test actions- run after each scenario
+26/10/2018 17:36:16 devpinoyLogger Hooks: @ After -Test Scenarios Failed
+26/10/2018 17:36:16 devpinoyLogger Current Page URL is http://automationpractice.com/index.php?controller=authentication&back=my-account
+26/10/2018 17:36:16 devpinoyLogger path C:\Users\bruna\Desktop\projects\New folder\cucumberFramework\ExecutionReports\FailedScreenshots\Screenshot_1540571776862.png
+26/10/2018 17:36:16 devpinoyLogger **********Hooks :@After  Test Scenarios END********************

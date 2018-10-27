@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [listenerRun]]">
+  <listeners>
+    <listener class-name="helpers.ListenerClass"/>
+  </listeners>
+  <test name="AccountManagement(failed)">
+    <classes>
+      <class name="step_definitions.RunnerClass1">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- step_definitions.RunnerClass1 -->
+    </classes>
+  </test> <!-- AccountManagement(failed) -->
+  <test name="AccountManagement(failed)(failed)">
+    <classes>
+      <class name="step_definitions.RunnerClass1">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- step_definitions.RunnerClass1 -->
+    </classes>
+  </test> <!-- AccountManagement(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [listenerRun]] -->
