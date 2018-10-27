@@ -22,7 +22,7 @@ public class DataHelper {
 
 
             try {
-                //specify the file where the data will come from
+                //specify the file where the data will come
                 FileInputStream  fs = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\testData\\TestData-seleniumframework.xlsx");
                // instantiate teh workbook object
                 XSSFWorkbook workbook=new XSSFWorkbook(fs);
