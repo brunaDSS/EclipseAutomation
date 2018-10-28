@@ -24,5 +24,5 @@ there is two ways of doing this :
 in the same file we will add the same test as many times as we have browsers 
 and change the parameter we are passing for each test
 
-2-through pom.xml file , by setting up a seperate testng.xml for each browser 
-and p
+2-through pom.xml file , by setting up a separate testng.xml for each browser 
+and passing a different browser as parameter
