@@ -6,7 +6,6 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import helpers.GlobalUtils;
-import helpers.TakeScreenShots;
 import helpers.log;
 
 import org.apache.commons.io.FileUtils;
@@ -17,10 +16,9 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
-
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.net.URL;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.HashMap;
@@ -37,14 +35,20 @@ public class Hooks {
 
  DesiredCapabilities capabilities=null;
 
+ public static final String USERNAME = "bdush1";
+ public static final String AUTOMATE_KEY = "UsUi6p9mozFw2mpqjefz";
+ public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+
  @Before
  public void openBrowser() throws MalformedURLException,IOException{
+	 
+	 
 
      log.info("************************Hooks @Before Test Scenarios started********************");
 
      log.info("Hooks @Before( Cucumber annotation , run before the scenario) Opening Chrome Browser------------------------------");
      
-     if(GlobalUtils.getProperties("browser").equals("local")) {
+   if(GlobalUtils.getProperties("browser").equals("local")) {
 
      System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 
@@ -72,19 +76,45 @@ public class Hooks {
      driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
      driver.manage().deleteAllCookies();
 
-     }else if(GlobalUtils.getProperties("browser").equals("chrome")) {
+   }else if(GlobalUtils.getProperties("browser").equals("chrome")) {
+	   
+	   DesiredCapabilities caps = new DesiredCapabilities();
+	   caps.setCapability("browser", "Chrome");
+	    caps.setCapability("browser_version", "62.0");
+	    caps.setCapability("os", "Windows");
+	    caps.setCapability("os_version", "10");
+	    caps.setCapability("resolution", "1024x768");
+	    caps.setCapability("acceptSslCerts", "true");
+	    caps.setCapability("project", "CucumberFramework");
+	   
+	    
+	    ChromeOptions options = new ChromeOptions();
+	    options.addArguments("start-maximized");
+	    options.addArguments("--disable-extensions");
+	    options.addArguments("--disable-infobars");
+	    
+	    Map<String,Object> prefs=new HashMap<String, Object>();
+	    prefs.put("credentials_enable_service",false);
+	    prefs.put("profile.password_manager_enabled",false);
+	    prefs.put("excludeSwitches", "enable-automation");
+	    prefs.put("excludeSwitches", "disable-popup-blocking");
+	    options.setExperimentalOption("prefs",prefs);
+	    caps.setCapability(ChromeOptions.CAPABILITY,options);
+	    
+	    
+	    driver = new RemoteWebDriver(new URL(URL), caps);
+	    driver.manage().deleteAllCookies();
+    	 
+    	 
+    	 
+   }else if(GlobalUtils.getProperties("browser").equals("firefox")) {
+	   
     	 
     	 
     	 
     	 
     	 
-     }else if(GlobalUtils.getProperties("browser").equals("firefox")) {
-    	 
-    	 
-    	 
-    	 
-    	 
-     }else if(GlobalUtils.getProperties("browser").equals("ie")) {
+   }else if(GlobalUtils.getProperties("browser").equals("ie")) {
     	 
     	 
     	 
@@ -152,7 +182,7 @@ public class Hooks {
 
         }
         log.info("**********Hooks :@After  Test Scenarios END********************");
-      driver.close();
+      driver.quit();
     }
 
 }
