@@ -1,5 +1,9 @@
 package helpers;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -137,7 +141,21 @@ public class GlobalUtils {
 
     }
 
-
+public static String getProperties(String key) throws IOException {
+	
+	Properties properties=new Properties();
+	
+	FileInputStream fileInputStream=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\testData\\properties.properties");
+	
+	properties.load(fileInputStream);
+	
+	String value=properties.getProperty(key);
+	
+	
+	return value;
+	
+	
+}
 
 
 

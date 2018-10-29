@@ -116,16 +116,16 @@
   			<artifactId>maven-surefire-plugin</artifactId>
   			<version>2.12.4</version>
   			 <configuration>
-  			 <parallel></parallel>
+  			<!--  <parallel></parallel>
   			 <forkMode>perthread</forkMode>
-              <threadCount>5</threadCount>
-  				<!-- <suiteXmlFiles>
-  					<suiteXmlFile>AddtoCardRunner.xml</suiteXmlFile>
-  				</suiteXmlFiles>    -->
+              <threadCount>5</threadCount> -->
+  				 <suiteXmlFiles>
+  					<suiteXmlFile>CheckOutRunner.xml</suiteXmlFile>
+  				</suiteXmlFiles>   
   			
-  				 <includes>
+  				 <!-- <includes>
   					<include>**/*Runner.java</include>
-  				</includes> 
+  				</includes>  -->
   			 
   			</configuration> 
   		</plugin>
