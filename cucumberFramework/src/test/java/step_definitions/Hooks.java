@@ -5,9 +5,10 @@ import com.cucumber.listener.Reporter;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-
+import helpers.GlobalUtils;
 import helpers.TakeScreenShots;
 import helpers.log;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -37,11 +38,13 @@ public class Hooks {
  DesiredCapabilities capabilities=null;
 
  @Before
- public void openBrowser() throws MalformedURLException{
+ public void openBrowser() throws MalformedURLException,IOException{
 
      log.info("************************Hooks @Before Test Scenarios started********************");
 
      log.info("Hooks @Before( Cucumber annotation , run before the scenario) Opening Chrome Browser------------------------------");
+     
+     if(GlobalUtils.getProperties("browser").equals("local")) {
 
      System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 
@@ -69,7 +72,26 @@ public class Hooks {
      driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
      driver.manage().deleteAllCookies();
 
-
+     }else if(GlobalUtils.getProperties("browser").equals("chrome")) {
+    	 
+    	 
+    	 
+    	 
+    	 
+     }else if(GlobalUtils.getProperties("browser").equals("firefox")) {
+    	 
+    	 
+    	 
+    	 
+    	 
+     }else if(GlobalUtils.getProperties("browser").equals("ie")) {
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+     }
  }
 
 
