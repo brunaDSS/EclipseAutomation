@@ -1,75 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[SignIn Action is successfully perfomred]]>
-    </line>
-    <line>
-      <![CDATA[SignIn Action is successfully perfomred]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="83625" started-at="2018-10-26T16:21:06Z" finished-at="2018-10-26T16:22:30Z">
+  <suite name="Default suite" duration-ms="2819" started-at="2018-10-30T14:30:26Z" finished-at="2018-10-30T14:30:29Z">
     <groups>
-      <group name="cucumber scenarios">
-        <method signature="TestNgFeatureRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.TestNgFeatureRunner@5c5a1b69]" name="feature" class="step_definitions.TestNgFeatureRunner"/>
-      </group> <!-- cucumber scenarios -->
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.AmendCardRunner@3701eaf6]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="83625" started-at="2018-10-26T16:21:06Z" finished-at="2018-10-26T16:22:30Z">
-      <class name="step_definitions.AmendCardRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:step_definitions.AmendCardRunner@3701eaf6]" name="setUpClass" is-config="true" duration-ms="41" started-at="2018-10-26T17:21:25Z" finished-at="2018-10-26T17:21:25Z">
+    <test name="Default test" duration-ms="2819" started-at="2018-10-30T14:30:26Z" finished-at="2018-10-30T14:30:29Z">
+      <class name="step_definitions.RunnerClass4">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="setUpClass" is-config="true" duration-ms="756" started-at="2018-10-30T14:30:26Z" finished-at="2018-10-30T14:30:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.AmendCardRunner@3701eaf6]" name="feature" duration-ms="64089" started-at="2018-10-26T17:21:26Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-26T17:22:30Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="feature" duration-ms="663" started-at="2018-10-30T14:30:27Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-30T14:30:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Shopping card management]]>
+                <![CDATA[card management actions as a guest customer]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[SignIn Action is successfully perfomred]]>
-            </line>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:step_definitions.AmendCardRunner@3701eaf6]" name="tearDown" is-config="true" duration-ms="78" started-at="2018-10-26T17:22:30Z" finished-at="2018-10-26T17:22:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="tearDown" is-config="true" duration-ms="262" started-at="2018-10-30T14:30:28Z" finished-at="2018-10-30T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:step_definitions.AmendCardRunner@3701eaf6]" name="tearDownClass" is-config="true" duration-ms="232" started-at="2018-10-26T17:22:30Z" finished-at="2018-10-26T17:22:30Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="tearDownClass" is-config="true" duration-ms="749" started-at="2018-10-30T14:30:28Z" finished-at="2018-10-30T14:30:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- step_definitions.AmendCardRunner -->
-      <class name="step_definitions.TestNgFeatureRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:step_definitions.TestNgFeatureRunner@5c5a1b69]" name="setUpClass" is-config="true" duration-ms="318" started-at="2018-10-26T17:21:06Z" finished-at="2018-10-26T17:21:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.TestNgFeatureRunner@5c5a1b69]" name="feature" duration-ms="17790" started-at="2018-10-26T17:21:07Z" description="runs Cucumber Features" data-provider="features" finished-at="2018-10-26T17:21:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Shopping card management]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[SignIn Action is successfully perfomred]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:step_definitions.TestNgFeatureRunner@5c5a1b69]" name="tearDownClass" is-config="true" duration-ms="753" started-at="2018-10-26T17:21:25Z" finished-at="2018-10-26T17:21:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- step_definitions.TestNgFeatureRunner -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- step_definitions.RunnerClass4 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

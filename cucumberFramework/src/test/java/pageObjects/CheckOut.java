@@ -59,6 +59,6 @@ public class CheckOut {
     public static WebElement shopping_card_quantity;
 
 
-  //*[@id="center_column"]/div/br[5]
+ 
 
 }

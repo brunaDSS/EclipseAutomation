@@ -15,8 +15,8 @@ import java.io.IOException;
                 "json:target2/cucumber.json",
                 "com.cucumber.listener.ExtentCucumberFormatter:output/report.html"},
 
-        strict = false,
-        dryRun = true
+        strict = true,
+        dryRun = false
         )
 
 
