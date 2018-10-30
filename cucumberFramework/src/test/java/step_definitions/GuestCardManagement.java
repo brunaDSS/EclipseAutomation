@@ -86,8 +86,6 @@ public class GuestCardManagement {
 	public void i_should_be_able_to_see_my_products_in_the_card()  {
 		
 		
-		cardAfterClose=GuestCardManagementActions.getCardQuantity();
-		
 		GlobalUtils.assertEquals(cardBeforeClose, cardAfterClose);
 		
     

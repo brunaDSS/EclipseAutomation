@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 30, 2018 03:03:35 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Oct 30, 2018 03:20:18 PM</span>
 				</a>
 			</li>
 			<li>
@@ -165,10 +165,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>9</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>10</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='8.333%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='8.333%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='8.333%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -185,7 +185,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>card management actions as a guest customer</span>
-						<span class='test-time'>Oct 30, 2018 03:03:35 PM</span>
+						<span class='test-time'>Oct 30, 2018 03:20:18 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -193,7 +193,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@ShoppingAsGuest</span>
 	</div>
-	<span class='duration right label'>0h 0m 24s+662ms</span>
+	<span class='duration right label'>0h 0m 32s+521ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">validate shopping card when the guest leaves the site and returns</span>
@@ -271,19 +271,28 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='12' class='node and fail' status='fail'>
+		<li test-id='12' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And i restore the cookies</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='13' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i get the card quantity</span>
 				<div class='pre'><pre>org.openqa.selenium.NoSuchSessionException: no such session
   (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
 System info: host: 'ABBEY-WED', ip: '192.168.2.68', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\BRUNA~1.DUS\AppData\Local\Temp\scoped_dir18472_15390}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 19de9666282da5888e88a574aa1fd785
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\BRUNA~1.DUS\AppData\Local\Temp\scoped_dir14564_172}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 904dfc861d4792fec299e2543ed9cb06
+*** Element info: {Using=xpath, value=//a[@title='View my shopping cart']/span[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -296,21 +305,18 @@ Session ID: 19de9666282da5888e88a574aa1fd785
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.getCookies(RemoteWebDriver.java:785)
-	at modules.GuestCardManagementActions.getCookies(GuestCardManagementActions.java:50)
-	at modules.GuestCardManagementActions.addCookies(GuestCardManagementActions.java:105)
-	at step_definitions.GuestCardManagement.i_restore_the_cookies(GuestCardManagement.java:81)
-	at ?.And i restore the cookies(src/test/resources/Features/cardManagementAsGuest.feature:16)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.getText(Unknown Source)
+	at helpers.GlobalUtils.getElementText(GlobalUtils.java:69)
+	at modules.GuestCardManagementActions.getCardQuantity(GuestCardManagementActions.java:45)
+	at step_definitions.GuestCardManagement.i_get_the_card_quantity(GuestCardManagement.java:52)
+	at ?.And i get the card quantity(src/test/resources/Features/cardManagementAsGuest.feature:17)
 </pre></div>
-			
-		</li>
-		<li test-id='13' class='node and skip' status='skip'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And i get the card quantity</span>
-				<div class='pre'>skipped</div>
 			
 		</li>
 		<li test-id='14' class='node then skip' status='skip'>
@@ -400,7 +406,7 @@ Session ID: 19de9666282da5888e88a574aa1fd785
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 30, 2018 03:03:35 PM</td>
+										<td>Oct 30, 2018 03:20:18 PM</td>
 										<td class='linked' test-id='2'>card management actions as a guest customer.validate shopping card when the guest leaves the site and returns</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -463,16 +469,17 @@ Session ID: 19de9666282da5888e88a574aa1fd785
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Oct 30, 2018 03:04:00 PM</td>
-                                                        <td class='linked' test-id='12'>card management actions as a guest customer.validate shopping card when the guest leaves the site and returns.And i restore the cookies</td>
+                                                        <td>Oct 30, 2018 03:20:51 PM</td>
+                                                        <td class='linked' test-id='13'>card management actions as a guest customer.validate shopping card when the guest leaves the site and returns.And i get the card quantity</td>
                                                         <td><pre><pre>org.openqa.selenium.NoSuchSessionException: no such session
   (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
 System info: host: 'ABBEY-WED', ip: '192.168.2.68', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\BRUNA~1.DUS\AppData\Local\Temp\scoped_dir18472_15390}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 19de9666282da5888e88a574aa1fd785
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\BRUNA~1.DUS\AppData\Local\Temp\scoped_dir14564_172}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 904dfc861d4792fec299e2543ed9cb06
+*** Element info: {Using=xpath, value=//a[@title='View my shopping cart']/span[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -485,12 +492,17 @@ Session ID: 19de9666282da5888e88a574aa1fd785
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.getCookies(RemoteWebDriver.java:785)
-	at modules.GuestCardManagementActions.getCookies(GuestCardManagementActions.java:50)
-	at modules.GuestCardManagementActions.addCookies(GuestCardManagementActions.java:105)
-	at step_definitions.GuestCardManagement.i_restore_the_cookies(GuestCardManagement.java:81)
-	at ?.And i restore the cookies(src/test/resources/Features/cardManagementAsGuest.feature:16)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.getText(Unknown Source)
+	at helpers.GlobalUtils.getElementText(GlobalUtils.java:69)
+	at modules.GuestCardManagementActions.getCardQuantity(GuestCardManagementActions.java:45)
+	at step_definitions.GuestCardManagement.i_get_the_card_quantity(GuestCardManagement.java:52)
+	at ?.And i get the card quantity(src/test/resources/Features/cardManagementAsGuest.feature:17)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -535,19 +547,19 @@ Session ID: 19de9666282da5888e88a574aa1fd785
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 30, 2018 03:03:35 PM</div>
+					<div class='panel-lead'>Oct 30, 2018 03:20:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 30, 2018 03:04:00 PM</div>
+			 		<div class='panel-lead'>Oct 30, 2018 03:20:52 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>25,559ms</div>
+					<div class='panel-lead'>33,481ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -626,14 +638,14 @@ Session ID: 19de9666282da5888e88a574aa1fd785
 				infoChild: 0,
 				exceptionsChild: 1,
 				
-				passGrandChild: 9,
+				passGrandChild: 10,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 2,
+				skipGrandChild: 1,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 3,
+				exceptionsGrandChild: 2,
 			};
 		</script>
 		

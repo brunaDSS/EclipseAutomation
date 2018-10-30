@@ -1,11 +1,17 @@
-30/10/2018 15:03:35 devpinoyLogger ************************Hooks @Before Test Scenarios started********************
-30/10/2018 15:03:35 devpinoyLogger Hooks @Before( Cucumber annotation , run before the scenario) Opening Chrome Browser------------------------------
-30/10/2018 15:03:48 devpinoyLogger going to the dresses page
-30/10/2018 15:03:50 devpinoyLogger hovering over the product
-30/10/2018 15:03:50 devpinoyLogger product name : Printed Dress
-30/10/2018 15:03:50 devpinoyLogger adding product to card
-30/10/2018 15:03:51 devpinoyLogger Switching to popup window of The  product
-30/10/2018 15:03:51 devpinoyLogger Clicking on continue shopping of the  product
-30/10/2018 15:04:00 devpinoyLogger Hooks: @After ( cucumber annotation)  test actions- run after each scenario
-30/10/2018 15:04:00 devpinoyLogger Hooks: @ After -Test Scenarios Failed
-30/10/2018 15:04:00 devpinoyLogger **********Hooks :@After  Test Scenarios END********************
+30/10/2018 15:20:18 devpinoyLogger ************************Hooks @Before Test Scenarios started********************
+30/10/2018 15:20:18 devpinoyLogger Hooks @Before( Cucumber annotation , run before the scenario) Opening Chrome Browser------------------------------
+30/10/2018 15:20:34 devpinoyLogger going to the dresses page
+30/10/2018 15:20:35 devpinoyLogger hovering over the product
+30/10/2018 15:20:36 devpinoyLogger product name : Printed Dress
+30/10/2018 15:20:36 devpinoyLogger adding product to card
+30/10/2018 15:20:37 devpinoyLogger Switching to popup window of The  product
+30/10/2018 15:20:37 devpinoyLogger Clicking on continue shopping of the  product
+30/10/2018 15:20:37 devpinoyLogger getting card quantity before closing the browser : 0
+30/10/2018 15:20:37 devpinoyLogger getting all cookies
+30/10/2018 15:20:38 devpinoyLogger closing the driver
+30/10/2018 15:20:40 devpinoyLogger opening the browser
+30/10/2018 15:20:51 devpinoyLogger adding cookies
+30/10/2018 15:20:51 devpinoyLogger getting all cookies
+30/10/2018 15:20:51 devpinoyLogger Hooks: @After ( cucumber annotation)  test actions- run after each scenario
+30/10/2018 15:20:51 devpinoyLogger Hooks: @ After -Test Scenarios Failed
+30/10/2018 15:20:51 devpinoyLogger **********Hooks :@After  Test Scenarios END********************
