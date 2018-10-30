@@ -13,7 +13,6 @@ Feature: card management actions as a guest customer
     And i copy the cookies
     And i close the browser
     And i open the browser
-    And i open the automationPractice website
     And i restore the cookies
     And i get the card quantity
     Then i should be able to see my products in the card

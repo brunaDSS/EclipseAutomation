@@ -73,7 +73,7 @@ public class GuestCardManagementActions {
 			 
 			 driver=new ChromeDriver();
 			 
-			 
+			   driver.get("http://automationpractice.com/index.php?");
 			 
 			 
 		 }else if(GlobalUtils.getProperties("browser").equals("chrome")) {
@@ -82,7 +82,7 @@ public class GuestCardManagementActions {
 			 
 			 driver=new ChromeDriver();
 			 
-			 
+			   driver.get("http://automationpractice.com/index.php?");
 		
 		 } else if(GlobalUtils.getProperties("browser").equals("firefox")) {
 			   
