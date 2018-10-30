@@ -130,15 +130,13 @@ public class Hooks {
 	    caps.setCapability("resolution", "1024x768");
 	    caps.setCapability("project", "CucumberFrameworkFirefox");
 	    caps.setCapability("built", "Version1");
-
-	    
 	    caps.setCapability("browserstack.ie.enablePopups", "true");
-	    caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+	
 	    caps.setCapability("acceptSslCerts", "true");
 	    
 	    driver = new RemoteWebDriver(new URL(URL), caps);
 	    driver.manage().deleteAllCookies();
-	   driver.manage().window().maximize();
+	    driver.manage().window().maximize();
 	   
     	 
     	 
