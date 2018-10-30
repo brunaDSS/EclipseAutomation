@@ -63,7 +63,11 @@ public class GuestCardManagementActions {
 			
 		}
 	
-	public static void openBrowser(WebDriver driver) throws IOException{
+	
+	
+	static WebDriver newDriver;
+	
+	public static void openBrowser() throws IOException{
 		
 		
 		 if(GlobalUtils.getProperties("browser").equals("local")) {
@@ -71,18 +75,18 @@ public class GuestCardManagementActions {
 			 
 			 System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 			 
-			 driver=new ChromeDriver();
+			 newDriver=new ChromeDriver();
 			 
-			   driver.get("http://automationpractice.com/index.php?");
+			 newDriver.get("http://automationpractice.com/index.php?");
 			 
 			 
 		 }else if(GlobalUtils.getProperties("browser").equals("chrome")) {
 			 
              System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 			 
-			 driver=new ChromeDriver();
+             newDriver=new ChromeDriver();
 			 
-			   driver.get("http://automationpractice.com/index.php?");
+             newDriver.get("http://automationpractice.com/index.php?");
 		
 		 } else if(GlobalUtils.getProperties("browser").equals("firefox")) {
 			   
@@ -100,14 +104,14 @@ public class GuestCardManagementActions {
 	}
 	
 	
-	public static void addCookies(WebDriver driver) {
+	public static void addCookies() {
 		
-		Set<Cookie> cookies=getCookies(driver);
+		Set<Cookie> cookies=getCookies(newDriver);
 		
 		
 		for(Cookie cookie: cookies) {
 			
-			driver.manage().addCookie(cookie);
+			newDriver.manage().addCookie(cookie);
 			
 		}
 		

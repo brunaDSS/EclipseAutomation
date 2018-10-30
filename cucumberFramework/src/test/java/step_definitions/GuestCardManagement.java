@@ -71,14 +71,14 @@ public class GuestCardManagement {
 	@Given("^i open the browser$")
 	public void i_open_the_browser() throws Exception{
 		
-		GuestCardManagementActions.openBrowser(driver);
+		GuestCardManagementActions.openBrowser();
 
 	}
 
 	@Given("^i restore the cookies$")
 	public void i_restore_the_cookies() {
 		
-		GuestCardManagementActions.addCookies( driver);
+		GuestCardManagementActions.addCookies();
   
 	}
 

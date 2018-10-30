@@ -6,4 +6,16 @@
       <class name="step_definitions.RunnerClass4"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="step_definitions.RunnerClass4">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDown"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- step_definitions.RunnerClass4 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
