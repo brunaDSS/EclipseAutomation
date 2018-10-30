@@ -10,13 +10,13 @@ import java.io.IOException;
 
 
 @CucumberOptions(features=".",
-        tags = {"@CheckoutWithOrderRef"},
+        tags = {"@ShoppingAsGuest"},
         plugin = {"pretty","html:target2/cucumber-html-report",
                 "json:target2/cucumber.json",
                 "com.cucumber.listener.ExtentCucumberFormatter:output/report.html"},
 
-        strict = true,
-        dryRun = false
+        strict = false,
+        dryRun = true
         )
 
 
