@@ -53,7 +53,7 @@ public class GuestCardManagementActions {
 		
 	}
 	
-	public static Set getCookies(WebDriver driver) {
+	public static Set<Cookie> getCookies(WebDriver driver) {
 		
 		
 		log.info("getting all cookies");
