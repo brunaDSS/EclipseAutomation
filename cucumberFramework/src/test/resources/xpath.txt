@@ -1,0 +1,81 @@
+
+ Xpath sintax : //tagName[@attributeName='AttributeValue']
+ css sintax : tagName[attributename='attributeValue']
+ 
+ 
+  ---->html : <a href="/projects/" title="Selenium Projects">Projects</a>
+  
+  xpath: //a[@href='projects']
+  xpath: //a[@title='Selenium Projects']
+  
+  css: a[href='projects']
+  css: a[title='Selenium Projects']
+  
+  
+  ---->html : <a href="/download/" title="Get Selenium">Download</a>
+  
+  xpath: //a[@href='download']
+  xpath: //a[contains(text(),'Download']
+  xpath: //a[@title='Get Selenium']
+  
+  css: a[href='download']
+  css: a[title='Get Selenium']
+  
+ ----> html: <li id="menu_documentation"><a href="/docs/" title="Technical references and guides">Documentation</a></li>
+  
+  xpath: //li[@id='menu_documentation']/a
+  xpath: //a[@href='docs']
+  xpath: //a[@title='Technical references and guides']
+  xpath: //a[contains(text(),'Documentation')]
+  
+  css:li[id='menu_documentation']>a
+  
+  ---->html: 
+  
+<div id="mBody">   
+  <div id="sidebar">     
+  <script src="/analytics.js" type="text/javascript"></script>
+  <div id="mainContent">
+  <h2>What is Selenium?</h2>
+ 
+  xPath: //h2[contains(text(),'What is Selenium?']
+  xpath: //div[@id='mainContent']/h2
+  xPath: //div[@id='mBody']/div[2]/h2[1]
+  
+  css:#mainContent>:nth-child(1) - this works only with id
+  css: #mBody>:nth-child(3)>:nth-child(1)
+  
+  
+ ----> html: <input type="text" id="q" name="q" accesskey="s" size="30">
+  xpath: //input[@id='q']
+  
+  css: #q
+  css: input[id='q']
+  
+  
+----> html:<input type="submit" id="submit" value="Go">
+
+  xpath: //input[@id='submit'] 
+  xpath: //input[@id='submit'and @type='submit']
+   
+  css: input[id='submit'][type='submit']
+  css: #submit
+ 
+ ----> html:
+ 
+ <table id="choice">
+    <tbody>
+      <tr>
+        <td style="border-right: 1px solid #CCCCCC">
+          <center>
+            <h3>Selenium WebDriver</h3>
+        
+   xPath://table[@id='choice']/body/tr/td[1]/center/h3
+   xPath://h3[contains(text(),'Selenium WebDriver']
+   
+   css: #choice>tbody>tr>td>center>h3
+   css:table[id='choice']>tbody>tr>td>:nth-child(1)>center>h3>
+    
+        
+        
+        

@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8744265953,
+              "duration": 7145165163,
               "status": "passed"
             },
             "line": 4,
@@ -23,13 +23,25 @@
           },
           {
             "result": {
-              "duration": 10939262497,
+              "duration": 3407046552,
               "status": "passed"
             },
             "line": 5,
-            "name": "i sign in",
+            "name": "i click on Dresses",
             "match": {
-              "location": "accountManagement.i_sign_in()"
+              "location": "DressesShopping.i_click_on_Dresses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 239019842,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i hover the first product",
+            "match": {
+              "location": "DressesShopping.i_hover_the_first_product()"
             },
             "keyword": "And "
           }
@@ -39,7 +51,7 @@
         "before": [
           {
             "result": {
-              "duration": 11631524629,
+              "duration": 4602206932,
               "status": "passed"
             },
             "match": {
@@ -47,14 +59,14 @@
             }
           }
         ],
-        "line": 28,
-        "name": "validate checkout with blank transfer",
+        "line": 66,
+        "name": "validate the sort functionality by price on the dresses page",
         "description": "",
-        "id": "shopping-card-management;validate-checkout-with-blank-transfer;;2",
+        "id": "card-management-actions-as-a-guest-customer;validate-the-sort-functionality-by-price-on-the-dresses-page;;2",
         "after": [
           {
             "result": {
-              "duration": 437887544,
+              "duration": 1491821284,
               "status": "passed"
             },
             "match": {
@@ -67,576 +79,82 @@
         "steps": [
           {
             "result": {
-              "duration": 16756783754,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "i add a product to the card",
-            "match": {
-              "location": "DressesShopping.i_add_a_product_to_the_card()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10180305494,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "i  proceed to check out",
-            "match": {
-              "location": "DressesShopping.i_proceed_to_check_out()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9270549052,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "i confirm the address",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_address()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9638173447,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "i confirm the shipping information",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_shipping_information()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7135893355,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "i checkout by bank wire",
-            "match": {
-              "location": "DressesShopping.i_checkout_by_bank_wire()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 27057888972,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "i confirm my order",
-            "match": {
-              "location": "DressesShopping.i_confirm_my_order()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2752871,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "i should be able to place an order and confirm the \"Your order on My Store is complete.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Your order on My Store is complete.",
-                  "offset": 52
-                }
-              ],
-              "location": "DressesShopping.i_should_be_able_to_place_an_order_and_confirm_the(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 16,
-            "name": "@CheckOut"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 11665830691,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "i open the automationPractice website",
-            "match": {
-              "location": "accountManagement.i_open_the_automationPractice_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 11596665890,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "i sign in",
-            "match": {
-              "location": "accountManagement.i_sign_in()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 9272089323,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 31,
-        "name": "validate checkout with blank transfer is available in the placed orders",
-        "description": "",
-        "id": "shopping-card-management;validate-checkout-with-blank-transfer-is-available-in-the-placed-orders",
-        "after": [
-          {
-            "result": {
-              "duration": 258968724,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 13285932900,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "i add a product to the card",
-            "match": {
-              "location": "DressesShopping.i_add_a_product_to_the_card()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2563324517,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "i  proceed to check out",
-            "match": {
-              "location": "DressesShopping.i_proceed_to_check_out()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3081893596,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "i confirm the address",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_address()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2554104179,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "i confirm the shipping information",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_shipping_information()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1999340076,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "i checkout by bank wire",
-            "match": {
-              "location": "DressesShopping.i_checkout_by_bank_wire()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2393360881,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "i confirm my order",
-            "match": {
-              "location": "DressesShopping.i_confirm_my_order()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4441908794,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "i should be able to see my order in the order history",
-            "match": {
-              "location": "DressesShopping.i_should_be_able_to_see_my_order_in_the_order_history()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 30,
-            "name": "@CheckOut"
-          },
-          {
-            "line": 30,
-            "name": "@CheckoutWithOrderRef"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 12023798752,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "i open the automationPractice website",
-            "match": {
-              "location": "accountManagement.i_open_the_automationPractice_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 8466745261,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "i sign in",
-            "match": {
-              "location": "accountManagement.i_sign_in()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 6988440691,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 54,
-        "name": "validate checkout with bank Check",
-        "description": "",
-        "id": "shopping-card-management;validate-checkout-with-bank-check;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 291943353,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 9204861717,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "i add a product to the card",
-            "match": {
-              "location": "DressesShopping.i_add_a_product_to_the_card()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1724179104,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "i  proceed to check out",
-            "match": {
-              "location": "DressesShopping.i_proceed_to_check_out()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1054911366,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "i confirm the address",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_address()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1414749524,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "i confirm the shipping information",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_shipping_information()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1490710004,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "i checkout by check",
-            "match": {
-              "location": "DressesShopping.i_checkout_by_check()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2058574494,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "i confirm my order",
-            "match": {
-              "location": "DressesShopping.i_confirm_my_order()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 93505,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "i should be able to place an order and confirm the \"Your order on My Store is complete.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Your order on My Store is complete.",
-                  "offset": 52
-                }
-              ],
-              "location": "DressesShopping.i_should_be_able_to_place_an_order_and_confirm_the(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 42,
-            "name": "@CheckOut"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 7814514280,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "i open the automationPractice website",
-            "match": {
-              "location": "accountManagement.i_open_the_automationPractice_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5166816805,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "i sign in",
-            "match": {
-              "location": "accountManagement.i_sign_in()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 7084810571,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 58,
-        "name": "validate checkout with bank Check",
-        "description": "",
-        "id": "shopping-card-management;validate-checkout-with-bank-check",
-        "after": [
-          {
-            "result": {
-              "duration": 3284335772,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7420000620,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "i add a product to the card",
-            "match": {
-              "location": "DressesShopping.i_add_a_product_to_the_card()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1715140655,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "i  proceed to check out",
-            "match": {
-              "location": "DressesShopping.i_proceed_to_check_out()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1438428093,
-              "status": "passed"
-            },
-            "line": 61,
-            "name": "i confirm the address",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_address()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1469844127,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "i confirm the shipping information",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_shipping_information()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 893550452,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "i checkout by check",
-            "match": {
-              "location": "DressesShopping.i_checkout_by_check()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1803819958,
-              "status": "passed"
-            },
-            "line": 64,
-            "name": "i confirm my order",
-            "match": {
-              "location": "DressesShopping.i_confirm_my_order()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10072630412,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027box\u0027]\"}\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.1\u0027, revision: \u00279c21bb67ef\u0027, time: \u00272017-08-17T15:26:08.955Z\u0027\nSystem info: host: \u0027ABBEY-WED\u0027, ip: \u0027192.168.2.68\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir\u003dC:\\Users\\BRUNA~1.DUS\\AppData\\Local\\Temp\\scoped_dir24500_24200}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.100, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: fd2a55ae3351fa65b4265705ea27e403\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027box\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat modules.CheckOutActions.getOrderRef(CheckOutActions.java:76)\r\n\tat step_definitions.DressesShopping.i_should_be_able_to_see_my_order_in_the_order_history(DressesShopping.java:221)\r\n\tat ✽.Then i should be able to see my order in the order history(src/test/resources/Features/dresses.feature:65)\r\n",
+              "duration": 500868895,
+              "error_message": "java.lang.NumberFormatException: For input string: \"$26.00\"\r\n\tat sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)\r\n\tat sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)\r\n\tat java.lang.Double.parseDouble(Double.java:538)\r\n\tat modules.GuestCardManagementActions.i_get_the_of_all_dresses(GuestCardManagementActions.java:260)\r\n\tat step_definitions.GuestCardManagement.i_get_the_of_all_dresses(GuestCardManagement.java:158)\r\n\tat ✽.And i get the \"prices\" of all dresses(src/test/resources/Features/cardManagementAsGuest.feature:59)\r\n",
               "status": "failed"
             },
-            "output": [
-              "Current Page URL is http://automationpractice.com/index.php?controller\u003dorder-confirmation\u0026id_cart\u003d787467\u0026id_module\u003d30\u0026id_order\u003d79023\u0026key\u003db666027c57f988e67c766b9b8c0148f9"
-            ],
-            "line": 65,
-            "name": "i should be able to see my order in the order history",
+            "line": 59,
+            "name": "i get the \"prices\" of all dresses",
             "match": {
-              "location": "DressesShopping.i_should_be_able_to_see_my_order_in_the_order_history()"
+              "arguments": [
+                {
+                  "val": "prices",
+                  "offset": 11
+                }
+              ],
+              "location": "GuestCardManagement.i_get_the_of_all_dresses(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "i sort the \"prices\" by \"lower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "prices",
+                  "offset": 12
+                },
+                {
+                  "val": "lower",
+                  "offset": 24
+                }
+              ],
+              "location": "GuestCardManagement.i_sort_the_by(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "i sort the dresses page by \"lower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lower",
+                  "offset": 28
+                }
+              ],
+              "location": "GuestCardManagement.i_sort_the_dresses_page_by(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "output": [
+              "Current Page URL is http://automationpractice.com/index.php?id_category\u003d8\u0026controller\u003dcategory"
+            ],
+            "line": 62,
+            "name": "i shouldn see the products sorted in the right order",
+            "match": {
+              "location": "GuestCardManagement.i_shouldn_see_the_products_sorted_in_the_right_order()"
             },
             "keyword": "Then "
           }
@@ -644,466 +162,15 @@
         "tags": [
           {
             "line": 57,
-            "name": "@CheckOut"
-          },
-          {
-            "line": 57,
-            "name": "@CheckoutWithOrderRef"
+            "name": "@SortProducts"
           }
         ]
       }
     ],
-    "name": "Shopping card management",
+    "name": "card management actions as a guest customer",
     "description": "",
-    "id": "shopping-card-management",
+    "id": "card-management-actions-as-a-guest-customer",
     "keyword": "Feature",
-    "uri": "src/test/resources/Features/dresses.feature"
-  }
-]]       "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 31,
-        "name": "validate checkout with blank transfer is available in the placed orders",
-        "description": "",
-        "id": "shopping-card-management;validate-checkout-with-blank-transfer-is-available-in-the-placed-orders",
-        "after": [
-          {
-            "result": {
-              "duration": 2405037139,
-              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.5.1\u0027, revision: \u00279c21bb67ef\u0027, time: \u00272017-08-17T15:26:08.955Z\u0027\nSystem info: host: \u0027ABBEY-WED\u0027, ip: \u0027192.168.2.68\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir\u003dC:\\Users\\BRUNA~1.DUS\\AppData\\Local\\Temp\\scoped_dir7752_9829}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.100, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: f1d1f073d0da228f6a606f5ae15e23c6\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:527)\r\n\tat step_definitions.Hooks.embedScreenshot(Hooks.java:154)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
-              "status": "failed"
-            },
-            "match": {
-              "location": "Hooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 32,
-            "name": "i add a product to the card",
-            "match": {
-              "location": "DressesShopping.i_add_a_product_to_the_card()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 33,
-            "name": "i  proceed to check out",
-            "match": {
-              "location": "DressesShopping.i_proceed_to_check_out()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 34,
-            "name": "i confirm the address",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_address()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 35,
-            "name": "i confirm the shipping information",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_shipping_information()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 36,
-            "name": "i checkout by bank wire",
-            "match": {
-              "location": "DressesShopping.i_checkout_by_bank_wire()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 37,
-            "name": "i confirm my order",
-            "match": {
-              "location": "DressesShopping.i_confirm_my_order()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 38,
-            "name": "i should be able to see my order in the order history",
-            "match": {
-              "location": "DressesShopping.i_should_be_able_to_see_my_order_in_the_order_history()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 30,
-            "name": "@CheckOut"
-          },
-          {
-            "line": 30,
-            "name": "@CheckoutWithOrderRef"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 12740564021,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "i open the automationPractice website",
-            "match": {
-              "location": "accountManagement.i_open_the_automationPractice_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 13696350749,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "i sign in",
-            "match": {
-              "location": "accountManagement.i_sign_in()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 15400201831,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 54,
-        "name": "validate checkout with bank Check",
-        "description": "",
-        "id": "shopping-card-management;validate-checkout-with-bank-check;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 3474470061,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 22388329670,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "i add a product to the card",
-            "match": {
-              "location": "DressesShopping.i_add_a_product_to_the_card()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9939950175,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "i  proceed to check out",
-            "match": {
-              "location": "DressesShopping.i_proceed_to_check_out()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8651122935,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "i confirm the address",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_address()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10759411862,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "i confirm the shipping information",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_shipping_information()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7769278112,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "i checkout by check",
-            "match": {
-              "location": "DressesShopping.i_checkout_by_check()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 20120872209,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "i confirm my order",
-            "match": {
-              "location": "DressesShopping.i_confirm_my_order()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5198281,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "i should be able to place an order and confirm the \"Your order on My Store is complete.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Your order on My Store is complete.",
-                  "offset": 52
-                }
-              ],
-              "location": "DressesShopping.i_should_be_able_to_place_an_order_and_confirm_the(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 42,
-            "name": "@CheckOut"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 11110041538,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "i open the automationPractice website",
-            "match": {
-              "location": "accountManagement.i_open_the_automationPractice_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 7976441883,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "i sign in",
-            "match": {
-              "location": "accountManagement.i_sign_in()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 12303310802,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 58,
-        "name": "validate checkout with bank Check",
-        "description": "",
-        "id": "shopping-card-management;validate-checkout-with-bank-check",
-        "after": [
-          {
-            "result": {
-              "duration": 4881346040,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9716042559,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "i add a product to the card",
-            "match": {
-              "location": "DressesShopping.i_add_a_product_to_the_card()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2196459748,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "i  proceed to check out",
-            "match": {
-              "location": "DressesShopping.i_proceed_to_check_out()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3798897881,
-              "status": "passed"
-            },
-            "line": 61,
-            "name": "i confirm the address",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_address()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3482495046,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "i confirm the shipping information",
-            "match": {
-              "location": "DressesShopping.i_confirm_the_shipping_information()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1611781619,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "i checkout by check",
-            "match": {
-              "location": "DressesShopping.i_checkout_by_check()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3463166475,
-              "status": "passed"
-            },
-            "line": 64,
-            "name": "i confirm my order",
-            "match": {
-              "location": "DressesShopping.i_confirm_my_order()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10069604032,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027box\u0027]\"}\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.1\u0027, revision: \u00279c21bb67ef\u0027, time: \u00272017-08-17T15:26:08.955Z\u0027\nSystem info: host: \u0027ABBEY-WED\u0027, ip: \u0027192.168.2.68\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir\u003dC:\\Users\\BRUNA~1.DUS\\AppData\\Local\\Temp\\scoped_dir22572_11916}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.100, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 5ed8e8ced1d6588658730baede2b881c\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027box\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat modules.CheckOutActions.getOrderRef(CheckOutActions.java:76)\r\n\tat step_definitions.DressesShopping.i_should_be_able_to_see_my_order_in_the_order_history(DressesShopping.java:221)\r\n\tat ✽.Then i should be able to see my order in the order history(src/test/resources/Features/dresses.feature:65)\r\n",
-              "status": "failed"
-            },
-            "output": [
-              "Current Page URL is http://automationpractice.com/index.php?controller\u003dorder-confirmation\u0026id_cart\u003d787460\u0026id_module\u003d30\u0026id_order\u003d79018\u0026key\u003db666027c57f988e67c766b9b8c0148f9"
-            ],
-            "line": 65,
-            "name": "i should be able to see my order in the order history",
-            "match": {
-              "location": "DressesShopping.i_should_be_able_to_see_my_order_in_the_order_history()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 57,
-            "name": "@CheckOut"
-          },
-          {
-            "line": 57,
-            "name": "@CheckoutWithOrderRef"
-          }
-        ]
-      }
-    ],
-    "name": "Shopping card management",
-    "description": "",
-    "id": "shopping-card-management",
-    "keyword": "Feature",
-    "uri": "src/test/resources/Features/dresses.feature"
+    "uri": "src/test/resources/Features/cardManagementAsGuest.feature"
   }
 ]

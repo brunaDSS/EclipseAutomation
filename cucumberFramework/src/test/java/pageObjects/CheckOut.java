@@ -57,8 +57,20 @@ public class CheckOut {
 
     @FindBy(how = How.XPATH, using = "//a[@title='View my shopping cart']/span[1]")
     public static WebElement shopping_card_quantity;
+    
+   
+    
+  //*[@id="center_column"]/div[3]/div[2]/form/button
+    
+    
+    
+    @FindBy(how = How.XPATH, using = "//a[@title='Continue shopping']")
+    public static WebElement continue_shopping1;
+    
+    @FindBy(how = How.XPATH, using = "//a[@title='Previous']")
+    public static WebElement continue_shopping2;
 
 
-  //*[@id="center_column"]/div/br[5]
+ 
 
 }

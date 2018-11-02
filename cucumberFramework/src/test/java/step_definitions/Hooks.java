@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.URL;
@@ -85,7 +86,8 @@ public class Hooks {
 	    caps.setCapability("os_version", "10");
 	    caps.setCapability("resolution", "1024x768");
 	    caps.setCapability("acceptSslCerts", "true");
-	    caps.setCapability("project", "CucumberFramework");
+	    caps.setCapability("project", "CucumberFrameworkChrome");
+	    caps.setCapability("built", "Version1");
 	   
 	    
 	    ChromeOptions options = new ChromeOptions();
@@ -105,7 +107,10 @@ public class Hooks {
 	    driver = new RemoteWebDriver(new URL(URL), caps);
 	    driver.manage().deleteAllCookies();
     	 
-    	 
+	   log.info(((RemoteWebDriver) driver).getSessionId().toString());
+	   
+	   
+	   
     	 
    }else if(GlobalUtils.getProperties("browser").equals("firefox")) {
 	   
@@ -115,6 +120,24 @@ public class Hooks {
     	 
     	 
    }else if(GlobalUtils.getProperties("browser").equals("ie")) {
+	   
+	   
+	   DesiredCapabilities caps = new DesiredCapabilities();
+	    caps.setCapability("browser", "IE");
+	    caps.setCapability("browser_version", "11.0");
+	    caps.setCapability("os", "Windows");
+	    caps.setCapability("os_version", "10");
+	    caps.setCapability("resolution", "1024x768");
+	    caps.setCapability("project", "CucumberFrameworkFirefox");
+	    caps.setCapability("built", "Version1");
+	    caps.setCapability("browserstack.ie.enablePopups", "true");
+	
+	    caps.setCapability("acceptSslCerts", "true");
+	    
+	    driver = new RemoteWebDriver(new URL(URL), caps);
+	    driver.manage().deleteAllCookies();
+	    driver.manage().window().maximize();
+	   
     	 
     	 
     	 
