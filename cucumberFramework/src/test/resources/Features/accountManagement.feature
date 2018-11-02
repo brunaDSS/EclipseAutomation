@@ -28,7 +28,7 @@ Feature: user account management
 
     Examples:
       | url|
-      | http://automationpractice.com/index.php?controller=my-account |
+      | http://automationpractice1.com/index.php?controller=my-account |
 
   @CreateNumerousAccount
   Scenario Outline: validate the create account page
