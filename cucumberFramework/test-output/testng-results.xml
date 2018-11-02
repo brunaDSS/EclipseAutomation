@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35243" started-at="2018-10-30T15:20:17Z" finished-at="2018-10-30T15:20:52Z">
+  <suite name="Default suite" duration-ms="19553" started-at="2018-11-02T15:23:49Z" finished-at="2018-11-02T15:24:08Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="35243" started-at="2018-10-30T15:20:17Z" finished-at="2018-10-30T15:20:52Z">
+    <test name="Default test" duration-ms="19553" started-at="2018-11-02T15:23:49Z" finished-at="2018-11-02T15:24:08Z">
       <class name="step_definitions.RunnerClass4">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="setUpClass" is-config="true" duration-ms="608" started-at="2018-10-30T15:20:17Z" finished-at="2018-10-30T15:20:18Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="setUpClass" is-config="true" duration-ms="547" started-at="2018-11-02T15:23:49Z" finished-at="2018-11-02T15:23:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="feature" duration-ms="33458" started-at="2018-10-30T15:20:18Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-30T15:20:51Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="feature" duration-ms="17959" started-at="2018-11-02T15:23:49Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-11-02T15:24:07Z">
           <params>
             <param index="0">
               <value>
@@ -24,26 +24,10 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: no such session
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
-System info: host: 'ABBEY-WED', ip: '192.168.2.68', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\BRUNA~1.DUS\AppData\Local\Temp\scoped_dir14564_172}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 904dfc861d4792fec299e2543ed9cb06
-*** Element info: {Using=xpath, value=//a[@title='View my shopping cart']/span[1]}]]>
+              <![CDATA[java.lang.NumberFormatException: For input string: "$26.00"]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchSessionException: no such session
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
-System info: host: 'ABBEY-WED', ip: '192.168.2.68', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\BRUNA~1.DUS\AppData\Local\Temp\scoped_dir14564_172}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 904dfc861d4792fec299e2543ed9cb06
-*** Element info: {Using=xpath, value=//a[@title='View my shopping cart']/span[1]}
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.NumberFormatException: For input string: "$26.00"
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -70,49 +54,24 @@ Session ID: 904dfc861d4792fec299e2543ed9cb06
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchSessionException: no such session
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
-System info: host: 'ABBEY-WED', ip: '192.168.2.68', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\BRUNA~1.DUS\AppData\Local\Temp\scoped_dir14564_172}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 904dfc861d4792fec299e2543ed9cb06
-*** Element info: {Using=xpath, value=//a[@title='View my shopping cart']/span[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy21.getText(Unknown Source)
-	at helpers.GlobalUtils.getElementText(GlobalUtils.java:69)
-	at modules.GuestCardManagementActions.getCardQuantity(GuestCardManagementActions.java:45)
-	at step_definitions.GuestCardManagement.i_get_the_card_quantity(GuestCardManagement.java:52)
-	at ✽.And i get the card quantity(src/test/resources/Features/cardManagementAsGuest.feature:17)
+Caused by: java.lang.NumberFormatException: For input string: "$26.00"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at modules.GuestCardManagementActions.i_get_the_of_all_dresses(GuestCardManagementActions.java:260)
+	at step_definitions.GuestCardManagement.i_get_the_of_all_dresses(GuestCardManagement.java:158)
+	at ✽.And i get the "prices" of all dresses(src/test/resources/Features/cardManagementAsGuest.feature:59)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="tearDown" is-config="true" duration-ms="111" started-at="2018-10-30T15:20:52Z" finished-at="2018-10-30T15:20:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="tearDown" is-config="true" duration-ms="71" started-at="2018-11-02T15:24:07Z" finished-at="2018-11-02T15:24:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="tearDownClass" is-config="true" duration-ms="806" started-at="2018-10-30T15:20:52Z" finished-at="2018-10-30T15:20:52Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:step_definitions.RunnerClass4@887af79]" name="tearDownClass" is-config="true" duration-ms="701" started-at="2018-11-02T15:24:07Z" finished-at="2018-11-02T15:24:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

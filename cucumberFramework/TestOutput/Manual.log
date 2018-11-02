@@ -1,17 +1,18 @@
-30/10/2018 15:20:18 devpinoyLogger ************************Hooks @Before Test Scenarios started********************
-30/10/2018 15:20:18 devpinoyLogger Hooks @Before( Cucumber annotation , run before the scenario) Opening Chrome Browser------------------------------
-30/10/2018 15:20:34 devpinoyLogger going to the dresses page
-30/10/2018 15:20:35 devpinoyLogger hovering over the product
-30/10/2018 15:20:36 devpinoyLogger product name : Printed Dress
-30/10/2018 15:20:36 devpinoyLogger adding product to card
-30/10/2018 15:20:37 devpinoyLogger Switching to popup window of The  product
-30/10/2018 15:20:37 devpinoyLogger Clicking on continue shopping of the  product
-30/10/2018 15:20:37 devpinoyLogger getting card quantity before closing the browser : 0
-30/10/2018 15:20:37 devpinoyLogger getting all cookies
-30/10/2018 15:20:38 devpinoyLogger closing the driver
-30/10/2018 15:20:40 devpinoyLogger opening the browser
-30/10/2018 15:20:51 devpinoyLogger adding cookies
-30/10/2018 15:20:51 devpinoyLogger getting all cookies
-30/10/2018 15:20:51 devpinoyLogger Hooks: @After ( cucumber annotation)  test actions- run after each scenario
-30/10/2018 15:20:51 devpinoyLogger Hooks: @ After -Test Scenarios Failed
-30/10/2018 15:20:51 devpinoyLogger **********Hooks :@After  Test Scenarios END********************
+02/11/2018 15:23:50 devpinoyLogger ************************Hooks @Before Test Scenarios started********************
+02/11/2018 15:23:50 devpinoyLogger Hooks @Before( Cucumber annotation , run before the scenario) Opening Chrome Browser------------------------------
+02/11/2018 15:24:04 devpinoyLogger going to the dresses page
+02/11/2018 15:24:05 devpinoyLogger hovering over the product
+02/11/2018 15:24:05 devpinoyLogger product name : Printed Dress
+02/11/2018 15:24:05 devpinoyLogger getting prices
+02/11/2018 15:24:05 devpinoyLogger price : $26.00
+02/11/2018 15:24:06 devpinoyLogger price : $50.99
+02/11/2018 15:24:06 devpinoyLogger price : $28.98
+02/11/2018 15:24:06 devpinoyLogger price : $30.50
+02/11/2018 15:24:06 devpinoyLogger price : $16.40
+02/11/2018 15:24:06 devpinoyLogger [$26.00, $50.99, $28.98, $30.50, $16.40]
+02/11/2018 15:24:06 devpinoyLogger price without space and $ $26.00
+02/11/2018 15:24:06 devpinoyLogger Hooks: @After ( cucumber annotation)  test actions- run after each scenario
+02/11/2018 15:24:06 devpinoyLogger Hooks: @ After -Test Scenarios Failed
+02/11/2018 15:24:06 devpinoyLogger Current Page URL is http://automationpractice.com/index.php?id_category=8&controller=category
+02/11/2018 15:24:07 devpinoyLogger path C:\Users\Bruna.Dushku\git\EclipseAutomation\cucumberFramework\ExecutionReports\FailedScreenshots\Screenshot_1541172247115.png
+02/11/2018 15:24:07 devpinoyLogger **********Hooks :@After  Test Scenarios END********************

@@ -1,6 +1,11 @@
 package modules;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Currency;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -11,6 +16,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import helpers.GlobalUtils;
 import helpers.log;
 import pageObjects.CheckOut;
@@ -22,6 +29,12 @@ public class GuestCardManagementActions {
 	public static int cardQuantityBeforeClose;
 	
 	public static int cardQuantityAfterClose;
+	
+	public static String secondProductName;
+	
+	public static List<String> prices;
+	
+	public static List<Double> pricesDouble;
 	
 	public static void continueShopping(WebDriver driver) {
 		
@@ -152,8 +165,146 @@ public class GuestCardManagementActions {
 			
 		}
 		
-		
+		public static void addToCompare(WebDriver driver) throws Exception {
 	
+			
+			
+			
+		    GlobalUtils.explicitWait(Dresses.add_to_compare, driver, 10);
+			
+			GlobalUtils.hoverAndClickElement(driver,Dresses.add_to_compare);
+			
+			log.info("adding the product to the compare card");
+			
+			Thread.sleep(5);
+		}
+		
+		
+		public static void hoverOnSecondProduct(WebDriver driver) {
+
+	        GlobalUtils.hoverOverElement(driver,Dresses.second_item_ho0ver);
+	        
+	        log.info("hovering over the product");
+	        
+	        secondProductName=GlobalUtils.getElementText(Dresses.get_second_product_name);
+	      
+	        
+	        log.info("getting the seconds product name"+secondProductName);
+
+	    }
+		
+		public static void goToCompare(WebDriver driver) {
+			
+			GlobalUtils.waitForPageToLoad(driver);
+			
+			GlobalUtils.clickOnEelement(Dresses.go_to_compare);
+			
+			
+			
+		}
+		
+		public static ArrayList<String> compareCardContent(WebDriver driver) {
+			
+			List<WebElement> productNames=driver.findElements(By.xpath("//table[@id='product_comparison']/tbody/tr/td/h5/a"));
+			List<String> prodNames=new ArrayList<String>();
+			
+			for( WebElement element:productNames) {
+				
+				prodNames.add(GlobalUtils.getElementText(element));
+		
+			}
+			
+			return (ArrayList<String>) prodNames;
+			
+			
+		}
+		
+		
+		
+		
+
+
+
+    public static void i_get_the_of_all_dresses(String info,WebDriver driver)  {
+	
+    	
+    	log.info("getting prices");
+		List<WebElement> pricesElement = driver.findElements(By.xpath("//*[@id='center_column']//span[@class='price product-price']"));
+		prices=new ArrayList<String>();
+		 
+		for(WebElement element: pricesElement) {
+			
+			 String price=element.getText().replaceAll(" ","");
+			
+		//price=price.replaceAll("[^\\d.]+", "");
+			
+			if(!price.equals(""))
+			{
+			prices.add(price);
+			
+			log.info("price : "+ price);
+			
+		  }
+	}
+		
+		
+
+		log.info(Arrays.deepToString(prices.toArray()));
+
+		for(String pr:prices  ) {
+			
+			String priceD=pr.replaceAll("$".toString(), "");			
+			priceD=priceD.replaceAll(" ","");			
+			log.info("price without space and $ "+priceD);
+			
+			pricesDouble.add(Double.parseDouble(priceD));			
+			log.info("double Price"+Double.parseDouble(priceD));
+			
+		}
+		
+		log.info(Arrays.deepToString(pricesDouble.toArray()));
+	
+	
+
+		
+    	}
+    
+    
+    
+    
+ 
+
+   public void i_sort_the_by(String info, String condition)  {
+	   
+	   
+	   
+	
+	
+ 
+   }
+
+
+   public void i_sort_the_dresses_page_by(String condition)  {
+	
+	
+    
+   }
+
+   public void i_shouldn_see_the_products_sorted_in_the_right_order()  {
+	
+	
+
+   }
+
+
+		
+		
+		
+		
+		
+		
+		
+
 
 	
 	

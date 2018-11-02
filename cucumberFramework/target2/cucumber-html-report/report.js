@@ -6,8 +6,67 @@ formatter.feature({
   "id": "card-management-actions-as-a-guest-customer",
   "keyword": "Feature"
 });
+formatter.scenarioOutline({
+  "line": 58,
+  "name": "validate the sort functionality by price on the dresses page",
+  "description": "",
+  "id": "card-management-actions-as-a-guest-customer;validate-the-sort-functionality-by-price-on-the-dresses-page",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 57,
+      "name": "@SortProducts"
+    }
+  ]
+});
+formatter.step({
+  "line": 59,
+  "name": "i get the \"\u003cinfo\u003e\" of all dresses",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 60,
+  "name": "i sort the \"\u003cinfo\u003e\" by \"\u003ccondition\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 61,
+  "name": "i sort the dresses page by \"\u003ccondition\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 62,
+  "name": "i shouldn see the products sorted in the right order",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 64,
+  "name": "",
+  "description": "",
+  "id": "card-management-actions-as-a-guest-customer;validate-the-sort-functionality-by-price-on-the-dresses-page;",
+  "rows": [
+    {
+      "cells": [
+        "info",
+        "condition"
+      ],
+      "line": 65,
+      "id": "card-management-actions-as-a-guest-customer;validate-the-sort-functionality-by-price-on-the-dresses-page;;1"
+    },
+    {
+      "cells": [
+        "prices",
+        "lower"
+      ],
+      "line": 66,
+      "id": "card-management-actions-as-a-guest-customer;validate-the-sort-functionality-by-price-on-the-dresses-page;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
 formatter.before({
-  "duration": 6762239914,
+  "duration": 4602206932,
   "status": "passed"
 });
 formatter.background({
@@ -22,161 +81,132 @@ formatter.step({
   "name": "i open the automationPractice website",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "accountManagement.i_open_the_automationPractice_website()"
-});
-formatter.result({
-  "duration": 6739336061,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 6,
-  "name": "validate shopping card when the guest leaves the site and returns",
-  "description": "",
-  "id": "card-management-actions-as-a-guest-customer;validate-shopping-card-when-the-guest-leaves-the-site-and-returns",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 5,
-      "name": "@ShoppingAsGuest"
-    }
-  ]
-});
 formatter.step({
-  "line": 8,
+  "line": 5,
   "name": "i click on Dresses",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 6,
   "name": "i hover the first product",
   "keyword": "And "
 });
-formatter.step({
-  "line": 10,
-  "name": "i click on add to card",
-  "keyword": "And "
+formatter.match({
+  "location": "accountManagement.i_open_the_automationPractice_website()"
 });
-formatter.step({
-  "line": 11,
-  "name": "i click on continue shopping",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "i get the card quantity",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "i copy the cookies",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "i close the browser",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "i open the browser",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "i restore the cookies",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "i get the card quantity",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "i should be able to see my products in the card",
-  "keyword": "Then "
+formatter.result({
+  "duration": 7145165163,
+  "status": "passed"
 });
 formatter.match({
   "location": "DressesShopping.i_click_on_Dresses()"
 });
 formatter.result({
-  "duration": 3266451003,
+  "duration": 3407046552,
   "status": "passed"
 });
 formatter.match({
   "location": "DressesShopping.i_hover_the_first_product()"
 });
 formatter.result({
-  "duration": 278266036,
+  "duration": 239019842,
   "status": "passed"
 });
-formatter.match({
-  "location": "DressesShopping.i_click_on_add_to_card()"
+formatter.scenario({
+  "line": 66,
+  "name": "validate the sort functionality by price on the dresses page",
+  "description": "",
+  "id": "card-management-actions-as-a-guest-customer;validate-the-sort-functionality-by-price-on-the-dresses-page;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 57,
+      "name": "@SortProducts"
+    }
+  ]
 });
-formatter.result({
-  "duration": 209877568,
-  "status": "passed"
+formatter.step({
+  "line": 59,
+  "name": "i get the \"prices\" of all dresses",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
 });
-formatter.match({
-  "location": "GuestCardManagement.i_click_on_continue_shopping()"
+formatter.step({
+  "line": 60,
+  "name": "i sort the \"prices\" by \"lower\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "And "
 });
-formatter.result({
-  "duration": 1572974925,
-  "status": "passed"
+formatter.step({
+  "line": 61,
+  "name": "i sort the dresses page by \"lower\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
 });
-formatter.match({
-  "location": "GuestCardManagement.i_get_the_card_quantity()"
-});
-formatter.result({
-  "duration": 132813083,
-  "status": "passed"
-});
-formatter.match({
-  "location": "GuestCardManagement.i_copy_the_cookies()"
-});
-formatter.result({
-  "duration": 32073801,
-  "status": "passed"
-});
-formatter.match({
-  "location": "GuestCardManagement.i_close_the_browser()"
-});
-formatter.result({
-  "duration": 2198815425,
-  "status": "passed"
-});
-formatter.match({
-  "location": "GuestCardManagement.i_open_the_browser()"
-});
-formatter.result({
-  "duration": 11110391306,
-  "status": "passed"
-});
-formatter.match({
-  "location": "GuestCardManagement.i_restore_the_cookies()"
-});
-formatter.result({
-  "duration": 60176204,
-  "status": "passed"
+formatter.step({
+  "line": 62,
+  "name": "i shouldn see the products sorted in the right order",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "GuestCardManagement.i_get_the_card_quantity()"
+  "arguments": [
+    {
+      "val": "prices",
+      "offset": 11
+    }
+  ],
+  "location": "GuestCardManagement.i_get_the_of_all_dresses(String)"
 });
 formatter.result({
-  "duration": 25775559,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: no such session\n  (Driver info: chromedriver\u003d2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.5.1\u0027, revision: \u00279c21bb67ef\u0027, time: \u00272017-08-17T15:26:08.955Z\u0027\nSystem info: host: \u0027ABBEY-WED\u0027, ip: \u0027192.168.2.68\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir\u003dC:\\Users\\BRUNA~1.DUS\\AppData\\Local\\Temp\\scoped_dir14564_172}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.100, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 904dfc861d4792fec299e2543ed9cb06\n*** Element info: {Using\u003dxpath, value\u003d//a[@title\u003d\u0027View my shopping cart\u0027]/span[1]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy21.getText(Unknown Source)\r\n\tat helpers.GlobalUtils.getElementText(GlobalUtils.java:69)\r\n\tat modules.GuestCardManagementActions.getCardQuantity(GuestCardManagementActions.java:45)\r\n\tat step_definitions.GuestCardManagement.i_get_the_card_quantity(GuestCardManagement.java:52)\r\n\tat ✽.And i get the card quantity(src/test/resources/Features/cardManagementAsGuest.feature:17)\r\n",
+  "duration": 500868895,
+  "error_message": "java.lang.NumberFormatException: For input string: \"$26.00\"\r\n\tat sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)\r\n\tat sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)\r\n\tat java.lang.Double.parseDouble(Double.java:538)\r\n\tat modules.GuestCardManagementActions.i_get_the_of_all_dresses(GuestCardManagementActions.java:260)\r\n\tat step_definitions.GuestCardManagement.i_get_the_of_all_dresses(GuestCardManagement.java:158)\r\n\tat ✽.And i get the \"prices\" of all dresses(src/test/resources/Features/cardManagementAsGuest.feature:59)\r\n",
   "status": "failed"
 });
 formatter.match({
-  "location": "GuestCardManagement.i_should_be_able_to_see_my_products_in_the_card()"
+  "arguments": [
+    {
+      "val": "prices",
+      "offset": 12
+    },
+    {
+      "val": "lower",
+      "offset": 24
+    }
+  ],
+  "location": "GuestCardManagement.i_sort_the_by(String,String)"
 });
 formatter.result({
   "status": "skipped"
 });
+formatter.match({
+  "arguments": [
+    {
+      "val": "lower",
+      "offset": 28
+    }
+  ],
+  "location": "GuestCardManagement.i_sort_the_dresses_page_by(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "GuestCardManagement.i_shouldn_see_the_products_sorted_in_the_right_order()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.write("Current Page URL is http://automationpractice.com/index.php?id_category\u003d8\u0026controller\u003dcategory");
 formatter.after({
-  "duration": 553482519,
+  "duration": 1491821284,
   "status": "passed"
 });
 });

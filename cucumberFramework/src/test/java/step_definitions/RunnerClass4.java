@@ -10,7 +10,7 @@ import java.io.IOException;
 
 
 @CucumberOptions(features=".",
-        tags = {"@ShoppingAsGuest"},
+        tags = {"@SortProducts"},
         plugin = {"pretty","html:target2/cucumber-html-report",
                 "json:target2/cucumber.json",
                 "com.cucumber.listener.ExtentCucumberFormatter:output/report.html"},

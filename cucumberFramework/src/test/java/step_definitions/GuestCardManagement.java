@@ -1,11 +1,15 @@
 package step_definitions;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import helpers.GlobalUtils;
+import modules.AddProductToCard;
 import modules.GuestCardManagementActions;
 import pageObjects.CheckOut;
 import pageObjects.ContactUs;
@@ -91,6 +95,86 @@ public class GuestCardManagement {
     
 	}
 
+	@Given("^i click on Add to compare$")
+	public void i_click_on_Add_to_compare() throws Exception  {
+		
+	
+	   GuestCardManagementActions.addToCompare(driver);
+	   
+	
+	}
+
+	@Given("^i hover over the second product$")
+	public void i_hover_over_the_second_product() {
+		
+		GuestCardManagementActions.hoverOnSecondProduct(driver);
+		
+	
+	
+	}
+
+	@Given("^i click on compare$")
+	public void i_click_on_compare() throws InterruptedException  {
+		
+		GuestCardManagementActions.goToCompare(driver);
+	   
+	}
+
+	@Then("^i should see both items in the compare card$")
+	public void i_should_see_both_items_in_the_compare_card()  {
+		
+		List<String> prodList=GuestCardManagementActions.compareCardContent(driver);
+		
+		Assert.assertTrue(prodList.contains(AddProductToCard.productName));
+		
+		Assert.assertTrue(prodList.contains(GuestCardManagementActions.secondProductName));
+		
+	
+	
+	}
+
+	@Given("^i delete the first product from the compare card$")
+	public void i_delete_the_first_product_from_the_compare_card()  {
+	  
+	}
+
+	@Given("^i delete the second product from the card$")
+	public void i_delete_the_second_product_from_the_card()  {
+	   
+	}
+
+	@Then("^i should see the compare card empty$")
+	public void i_should_see_the_compare_card_empty()  {
+
+	}
+	
+	
 	
 
+@Given("^i get the \"([^\"]*)\" of all dresses$")
+public void i_get_the_of_all_dresses(String info)  {
+	
+	
+	GuestCardManagementActions.i_get_the_of_all_dresses(info, driver);
+
 }
+
+@Given("^i sort the \"([^\"]*)\" by \"([^\"]*)\"$")
+public void i_sort_the_by(String info, String condition)  {
+ 
+}
+
+@Given("^i sort the dresses page by \"([^\"]*)\"$")
+public void i_sort_the_dresses_page_by(String condition)  {
+    
+}
+
+@Then("^i shouldn see the products sorted in the right order$")
+public void i_shouldn_see_the_products_sorted_in_the_right_order()  {
+
+}
+
+
+
+}
+	
