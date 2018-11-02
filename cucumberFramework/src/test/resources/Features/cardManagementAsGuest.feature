@@ -63,5 +63,5 @@ Feature: card management actions as a guest customer
  
     Examples:
     | info | condition |
-    | prices | lower |
+    | prices2 | lower2 |
     
