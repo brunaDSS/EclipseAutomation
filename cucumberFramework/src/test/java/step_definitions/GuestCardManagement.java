@@ -154,7 +154,7 @@ public class GuestCardManagement {
 @Given("^i get the \"([^\"]*)\" of all dresses$")
 public void i_get_the_of_all_dresses(String info)  {
 	
-	
+	System.out.println("info value from step definition "+info);
 	GuestCardManagementActions.i_get_the_of_all_dresses(info, driver);
 
 }
