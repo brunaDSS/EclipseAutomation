@@ -15,7 +15,7 @@ import java.io.IOException;
 
 
 @CucumberOptions(features=".",
-        tags = {"@AccountManagement"},
+        tags = {"@SortProducts"},
        
         plugin = {"pretty","html:target2/cucumber-html-report",
                 "json:target2/cucumber.json",

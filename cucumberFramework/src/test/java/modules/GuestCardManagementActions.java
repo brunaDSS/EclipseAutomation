@@ -227,7 +227,11 @@ public class GuestCardManagementActions {
 
     public static void i_get_the_of_all_dresses(String info,WebDriver driver)  {
 	
-    	
+    	System.out.println("info value in Action method "+info);
+    	if(info.equalsIgnoreCase("prices22"))
+    	{
+    		
+    	System.out.println("inside if body");
     	log.info("getting prices");
 		List<WebElement> pricesElement = driver.findElements(By.xpath("//*[@id='center_column']//span[@class='price product-price']"));
 		prices=new ArrayList<String>();
@@ -264,8 +268,8 @@ public class GuestCardManagementActions {
 		
 		log.info(Arrays.deepToString(pricesDouble.toArray()));
 	
-	
-
+    	}
+        System.out.println("outside if body");
 		
     	}
     
